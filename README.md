@@ -43,6 +43,23 @@ SELECT im.Id_Casilla, im.Nombre_Casilla, inv.IdInventario, inv.Nombre_Inventario
 FROM inventario_medicamentos AS im
 INNER JOIN inventario AS inv ON im.Id_Casilla = inv.IdInventario
 WHERE inv.Total_Hora > 5;
+// routes/empleado.route.js
+const express = require("express");
+const router = express.Router();
+const Empleado = require("../models/empleado");
+
+router.post("/", async (req, res) => {
+  const nuevo = new Empleado(req.body);
+  await nuevo.save();
+  res.json(nuevo);
+});
+
+router.get("/", async (req, res) => {
+  const empleados = await Empleado.find();
+  res.json(empleados);
+});
+
+module.exports = router;
 
 -- Operadores lógicos
 SELECT * FROM Inventario WHERE Total_Hora > 50 AND Total_Hora <= 100;
