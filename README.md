@@ -12,6 +12,17 @@ Incluye documentación técnica, diagramas y scripts SQL.
 - [Rutas API](https://github.com/angelapatriciaramirezsoler-maker/proyecto-Archer-Medical-/tree/main/server/routes)
 - [Modelos Mongoose](https://github.com/angelapatriciaramirezsoler-maker/proyecto-Archer-Medical-/tree/main/server/models)
 - [Base de Datos](https://github.com/angelapatriciaramirezsoler-maker/proyecto-Archer-Medical-/tree/main/server/database)
+// models/empleado.js
+const mongoose = require("mongoose");
+
+const empleadoSchema = new mongoose.Schema({
+  name: String,
+  position: String,
+  office: String,
+  salary: Number
+});
+
+module.exports = mongoose.model("Empleado", empleadoSchema);
 
 ---
 
