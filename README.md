@@ -85,10 +85,6 @@ proyecto-Archer-Medical-/
 
 ---
 
-✅ Con este README cumples exactamente con lo que te piden:  
-- Enlaces de GitHub de las carpetas  
-- Scripts de base de datos  
-- Scripts de codificación de módulos  
 
 ---
 
