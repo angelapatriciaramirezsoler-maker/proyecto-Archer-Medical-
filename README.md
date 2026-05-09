@@ -28,7 +28,7 @@ module.exports = mongoose.model("Empleado", empleadoSchema);
 
 ## 🗄️ Scripts Base de Datos (SQL)
 
-Ejemplos de consultas DML y operadores:
+
 
 ```sql
 -- Selección de tablas principales
@@ -87,7 +87,3 @@ proyecto-Archer-Medical-/
 
 
 ---
-
-¿Quieres que te prepare el archivo `README.md` ya listo para **copiar y pegar directamente en tu repositorio** sin que tengas que editar nada más?
--- Operadores lógicos
-SELECT * FROM Inventario WHERE Total_Hora > 50 AND Total_Hora <= 100;
